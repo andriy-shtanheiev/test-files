@@ -7,7 +7,7 @@
     "build": "nx build",
     "test": "nx test",
     "install-certificates": "dotnet dev-certs https --export-path .certificates\\test-files.pem --no-password --format PEM -q && dotnet dev-certs https --trust -q",
-    "prepare": "npm run install-certificates"
+    "prepare": "pnpm run install-certificates"
   },
   "private": true,
   "dependencies": {

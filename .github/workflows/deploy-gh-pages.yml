@@ -26,10 +26,15 @@ jobs:
 
       - name: Build app
         run: pnpm run build --base-href /test-files/
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist/test-files
-          publish_branch: development
-          force_orphan: true
+          branch: gh-pages    # The branch to deploy to
+          folder: ./dist/test-files       # The folder to deploy (output of your build)
+      #- name: Deploy to GitHub Pages
+      #  uses: peaceiris/actions-gh-pages@v4
+      #  with:
+      #    github_token: ${{ secrets.GITHUB_TOKEN }}
+      #    publish_dir: ./dist/test-files
+      #    publish_branch: development
+      #    force_orphan: true

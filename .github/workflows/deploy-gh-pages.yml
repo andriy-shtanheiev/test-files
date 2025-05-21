@@ -1,4 +1,4 @@
-# Workflow to build the Nx Angular app and deploy to GitHub Pages
+lopment# Workflow to build the Nx Angular app and deploy to GitHub Pages
 name: Deploy to GitHub Pages
 
 on:
@@ -31,5 +31,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist/test-files
-          publish_branch: gh-pages
+          publish_branch: development
           force_orphan: true

@@ -1,4 +1,4 @@
-lopment# Workflow to build the Nx Angular app and deploy to GitHub Pages
+# Workflow to build the Nx Angular app and deploy to GitHub Pages
 name: Deploy to GitHub Pages
 
 on:
